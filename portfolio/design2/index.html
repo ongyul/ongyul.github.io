@@ -65,6 +65,14 @@
 </svg></button>
   </p>
 
+  <section class="thumbnail-and-intro mb-5">
+    <img src="icon/closeIcon.html" alt="Your Name" class="thumbnail-img rounded-full w-20 h-20 object-cover mx-auto"/>
+    <div class="intro-text text-center mt-3">
+      <p class="font-bold">Your Name</p>
+      <p class="text-sm">A short bio or introduction about yourself.</p>
+    </div>
+  </section>
+
   
   
   <ul class="list-none flex flex-col gap-1">
@@ -362,6 +370,44 @@
 
 
 
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    gap: 1rem;
+  }
+
+  @media (min-width: 560px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 767px) {  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 800px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 1200px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
 <div class="flex max-h-screen relative overflow-y-auto h-full w-full">
   
   <article class="px-6 py-20 w-full mx-auto prose lg:prose-lg dark:prose-invert h-fit prose-img:mx-auto">
@@ -383,6 +429,86 @@
 <p>Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</p>
 <p>Marzipan vanilla cookie biscuit jelly muffin ipsum cream vanilla tiramisu. Marzipan vanilla sweet tiramisu pastry cake jelly jelly pastry cake. Cookie sweet donut candy pastry apple dolor orange lollipop biscuit. Muffin cream ipsum ipsum sprinkles sugar tiramisu pastry sweet tiramisu.</p>
 
+    <p></p>
+    <script src="https://utteranc.es/client.js"
+        repo="ongyul/ongyul.github.io"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+
+      <p></p>
+      <section class="additional-pages">
+        <h2>Random Articles</h2>
+        <div class="grid-container">
+          
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/newsletter/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">5. Newsletter</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                The theme supports a subscription to multiple newsletter providers.
+Buttondown Substack Revue Buttondown [Params.newsletter.provider] = &ldquo;buttondown&rdquo;
+Copy the action url from your buttondown admin dashboard and add it to [Params.newsletter.path] in config.toml
+Substack [Params.newsletter.provider] = &ldquo;substack&rdquo;
+Setting up substack is the easiest. Just add your substack newsletter URL (applicable for custom domains also) to [Params.newsletter.path] in config.toml
+Note that since substack doesn&rsquo;t have a native API for subscription. The theme uses the api from substackapi.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/google-analytics/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">6. Google Analytics</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Digital garden theme utilizes the Hugo&rsquo;s [internal template](internal templates) for Google analytics and so both Google analytics v3 and GA v4 (gtag) are supported.
+Add your UA-PROPERTY_ID or G-MEASUREMENT_ID to config.toml
+Google Analytics v3 (analytics.js) googleAnalytics = &#39;UA-PROPERTY_ID&#39; Google Analytics v4 (gtag.js) googleAnalytics = &#39;G-MEASUREMENT_ID&#39; → Configure Metatags
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/social-menu/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">4. Social Menu</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                The social menu can be used to configure all the social icons in the sidebar. Add links to your social media in the website config to show the icons.
+[[menu.social]] name = &#39;Twitter&#39; url = &#39;https://twitter.com&#39; weight = 1 The name of the social menu needs to be unique and should be one of the supported values.
+Supported values for the social menu item name:
+Twitter GitHub LinkedIn Instagram Mastodon Dribbble Codepen Twitch Email RSS → Configure newsletter
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/portfolio/design1/">
+              
+              
+                <img class="rounded max-w-full mb-4" src="https://cdn.jsdelivr.net/gh/ongyul/blog/assets/123.png?raw=true" alt="Pastry jelly cookie sugar donut orange" />
+              
+              <h3 class="text-lg font-semibold mb-0.5">Pastry jelly cookie sugar donut orange</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Croissant orange croissant dolor orange croissant. Lollipop biscuit donut vanilla sweet croissant. Apple donut candy tiramisu cream jelly. Croissant sweet cookie vanilla tiramisu dolor.
+Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.
+Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/social-menu/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">4. Social Menu</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                The social menu can be used to configure all the social icons in the sidebar. Add links to your social media in the website config to show the icons.
+[[menu.social]] name = &#39;Twitter&#39; url = &#39;https://twitter.com&#39; weight = 1 The name of the social menu needs to be unique and should be one of the supported values.
+Supported values for the social menu item name:
+Twitter GitHub LinkedIn Instagram Mastodon Dribbble Codepen Twitch Email RSS → Configure newsletter
+              </div>
+            </a>
+          
+        </div>
+      </section>
   </article>
 
 </div>

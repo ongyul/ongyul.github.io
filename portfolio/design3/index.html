@@ -65,6 +65,14 @@
 </svg></button>
   </p>
 
+  <section class="thumbnail-and-intro mb-5">
+    <img src="icon/closeIcon.html" alt="Your Name" class="thumbnail-img rounded-full w-20 h-20 object-cover mx-auto"/>
+    <div class="intro-text text-center mt-3">
+      <p class="font-bold">Your Name</p>
+      <p class="text-sm">A short bio or introduction about yourself.</p>
+    </div>
+  </section>
+
   
   
   <ul class="list-none flex flex-col gap-1">
@@ -362,6 +370,44 @@
 
 
 
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    gap: 1rem;
+  }
+
+  @media (min-width: 560px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 767px) {  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 800px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 1200px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
 <div class="flex max-h-screen relative overflow-y-auto h-full w-full">
   
   <article class="px-6 py-20 w-full mx-auto prose lg:prose-lg dark:prose-invert h-fit prose-img:mx-auto">
@@ -383,6 +429,85 @@
 <p>Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</p>
 <p>Marzipan vanilla cookie biscuit jelly muffin ipsum cream vanilla tiramisu. Marzipan vanilla sweet tiramisu pastry cake jelly jelly pastry cake. Cookie sweet donut candy pastry apple dolor orange lollipop biscuit. Muffin cream ipsum ipsum sprinkles sugar tiramisu pastry sweet tiramisu.</p>
 
+    <p></p>
+    <script src="https://utteranc.es/client.js"
+        repo="ongyul/ongyul.github.io"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+
+      <p></p>
+      <section class="additional-pages">
+        <h2>Random Articles</h2>
+        <div class="grid-container">
+          
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/installation/">
+              
+              
+                <img class="rounded max-w-full mb-4" src="https://file.newswire.co.kr/data/datafile2/thumb_480/2008/12/2039103817_20081204102208_5415926347.jpg" alt="1. Theme Installation" />
+              
+              <h3 class="text-lg font-semibold mb-0.5">1. Theme Installation</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Create a new hugo website or open your existing hugo site.
+Add the theme to your hugo site Use as a git submodule:
+git submodule add https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden Clone the repository (one-off, updating the theme may be harder later):
+git clone https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden Setup Copy package.json, package-lock.json and tailwind.config.js files from the theme/digitalgarden folder to the root folder of your the website Run npm install to install required packages for theme Run npm i -g postcss-cli to use PostCSS with Hugo build Set theme = 'digitalgarden' in config.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/metatags/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">7. Metatags</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Metatags are used to provide additional information about the page, usualy used by search engines and social media websites / apps. It allows to customize your page&rsquo;s title, description, preview image and more.
+Configure default tags // config.toml
+title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital Garden on the Internet&#34; images = [&#39;/digital-garden-logo.png&#39;] Setting the above values will be used as default for all pages unless its overridden in a specific page&rsquo;s markdown.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/installation/">
+              
+              
+                <img class="rounded max-w-full mb-4" src="https://file.newswire.co.kr/data/datafile2/thumb_480/2008/12/2039103817_20081204102208_5415926347.jpg" alt="1. Theme Installation" />
+              
+              <h3 class="text-lg font-semibold mb-0.5">1. Theme Installation</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Create a new hugo website or open your existing hugo site.
+Add the theme to your hugo site Use as a git submodule:
+git submodule add https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden Clone the repository (one-off, updating the theme may be harder later):
+git clone https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden Setup ㄴㅇㄹㅎㄴㅇㄹㅎㅇㄴㅎㄹ
+Copy package.json, package-lock.json and tailwind.config.js files from the theme/digitalgarden folder to the root folder of your the website Run npm install to install required packages for theme Run npm i -g postcss-cli to use PostCSS with Hugo build Set theme = 'digitalgarden' in config.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/structure/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">2. Structure</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Understand the structure of the theme&rsquo;s setup to create content for your website.
+Theme&rsquo;s content structure . ├── ... ├── content # Hosts all Markdown content │ ├── articles # Contains the list of markdown files for notes/posts │ │ ├── article-1.md │ │ ├── article-2.md │ │ └── article-3.md │ └── portfolio # List of portfolio projects or case studies │ ├── project-1.md │ └── project-2.md ├── data # Test files (alternatively `spec` or `tests`) │ └── stack.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/primary-menu/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">3. Primary Menu</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                The sidebar of the theme uses the main menu. Add all the items for your sidebar navigation in this menu.
+// config.toml
+[menu] [[menu.main]] name = &#39;Home&#39; url = &#39;/&#39; weight = 1 [[menu.main]] name = &#39;Content&#39; params.header = true weight = 2 [[menu.main]] name = &#39;Articles&#39; url = &#39;/articles&#39; weight = 3 name → Title of the menu item url → Path to navigate weight → Used to decide the order of menu items params.
+              </div>
+            </a>
+          
+        </div>
+      </section>
   </article>
 
 </div>
