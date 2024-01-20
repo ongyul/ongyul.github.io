@@ -391,17 +391,23 @@ Note that since substack doesn&rsquo;t have a native API for subscription. The t
 <style>
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  
+    grid-template-columns: repeat(1, 1fr);  
     gap: 1rem;
   }
 
-  @media (min-width: 768px) {  
+  @media (min-width: 506px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {  
     .grid-container {
       grid-template-columns: repeat(1, 1fr);
     }
   }
 
-  @media (min-width: 1024px) {  
+  @media (min-width: 1200px) {  
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
     }
