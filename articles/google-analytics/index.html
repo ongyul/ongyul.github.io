@@ -627,47 +627,18 @@ title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital
         onload="onUtterancesLoaded()" 
         >
       </script>
+      
+      <script>
+        function onUtterancesLoaded() {
+          document.getElementById('comment-skeleton').style.display = 'none';
+        }
+      </script>
 
       <p></p>
       <section class="additional-pages">
         <h2>Random Articles</h2>
         <div class="grid-container">
           
-          
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/portfolio/design3/">
-              
-              
-                <img class="rounded max-w-full mb-4" src="https://picsum.photos/id/102/400/300" alt="Apple cream vanilla apple marzipan muffin" />
-              
-              <h3 class="text-lg font-semibold mb-0.5">Apple cream vanilla apple marzipan muffin</h3>
-              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                Tiramisu sprinkles marzipan lollipop marzipan dolor. Jelly candy marzipan vanilla candy ipsum. Sugar croissant lollipop vanilla cream marzipan. Sprinkles croissant cream dolor jelly marzipan.
-Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.
-Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.
-              </div>
-            </a>
-          
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/google-analytics/">
-              
-              
-              <h3 class="text-lg font-semibold mb-0.5">6. Google Analytics</h3>
-              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                Digital garden theme utilizes the Hugo&rsquo;s [internal template](internal templates) for Google analytics and so both Google analytics v3 and GA v4 (gtag) are supported.
-Add your UA-PROPERTY_ID or G-MEASUREMENT_ID to config.toml
-Google Analytics v3 (analytics.js) googleAnalytics = &#39;UA-PROPERTY_ID&#39; Google Analytics v4 (gtag.js) googleAnalytics = &#39;G-MEASUREMENT_ID&#39; → Configure Metatags
-              </div>
-            </a>
-          
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/metatags/">
-              
-              
-              <h3 class="text-lg font-semibold mb-0.5">7. Metatags</h3>
-              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                Metatags are used to provide additional information about the page, usualy used by search engines and social media websites / apps. It allows to customize your page&rsquo;s title, description, preview image and more.
-Configure default tags // config.toml
-title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital Garden on the Internet&#34; images = [&#39;/digital-garden-logo.png&#39;] Setting the above values will be used as default for all pages unless its overridden in a specific page&rsquo;s markdown.
-              </div>
-            </a>
           
             <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/social-menu/">
               
@@ -681,6 +652,17 @@ Twitter GitHub LinkedIn Instagram Mastodon Dribbble Codepen Twitch Email RSS →
               </div>
             </a>
           
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/primary-menu/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">3. Primary Menu</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                The sidebar of the theme uses the main menu. Add all the items for your sidebar navigation in this menu.
+// config.toml
+[menu] [[menu.main]] name = &#39;Home&#39; url = &#39;/&#39; weight = 1 [[menu.main]] name = &#39;Content&#39; params.header = true weight = 2 [[menu.main]] name = &#39;Articles&#39; url = &#39;/articles&#39; weight = 3 name → Title of the menu item url → Path to navigate weight → Used to decide the order of menu items params.
+              </div>
+            </a>
+          
             <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/metatags/">
               
               
@@ -689,6 +671,28 @@ Twitter GitHub LinkedIn Instagram Mastodon Dribbble Codepen Twitch Email RSS →
                 Metatags are used to provide additional information about the page, usualy used by search engines and social media websites / apps. It allows to customize your page&rsquo;s title, description, preview image and more.
 Configure default tags // config.toml
 title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital Garden on the Internet&#34; images = [&#39;/digital-garden-logo.png&#39;] Setting the above values will be used as default for all pages unless its overridden in a specific page&rsquo;s markdown.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/primary-menu/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">3. Primary Menu</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                The sidebar of the theme uses the main menu. Add all the items for your sidebar navigation in this menu.
+// config.toml
+[menu] [[menu.main]] name = &#39;Home&#39; url = &#39;/&#39; weight = 1 [[menu.main]] name = &#39;Content&#39; params.header = true weight = 2 [[menu.main]] name = &#39;Articles&#39; url = &#39;/articles&#39; weight = 3 name → Title of the menu item url → Path to navigate weight → Used to decide the order of menu items params.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/google-analytics/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">6. Google Analytics</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Digital garden theme utilizes the Hugo&rsquo;s [internal template](internal templates) for Google analytics and so both Google analytics v3 and GA v4 (gtag) are supported.
+Add your UA-PROPERTY_ID or G-MEASUREMENT_ID to config.toml
+Google Analytics v3 (analytics.js) googleAnalytics = &#39;UA-PROPERTY_ID&#39; Google Analytics v4 (gtag.js) googleAnalytics = &#39;G-MEASUREMENT_ID&#39; → Configure Metatags
               </div>
             </a>
           
