@@ -445,7 +445,7 @@
         <div class="grid-container">
           
           
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/structure/">
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/structure/">
               
               
               <h3 class="text-lg font-semibold mb-0.5">2. Structure</h3>
@@ -455,14 +455,13 @@ Theme&rsquo;s content structure . ├── ... ├── content # Hosts all Ma
               </div>
             </a>
           
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/metatags/">
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/structure/">
               
               
-              <h3 class="text-lg font-semibold mb-0.5">7. Metatags</h3>
+              <h3 class="text-lg font-semibold mb-0.5">2. Structure</h3>
               <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                Metatags are used to provide additional information about the page, usualy used by search engines and social media websites / apps. It allows to customize your page&rsquo;s title, description, preview image and more.
-Configure default tags // config.toml
-title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital Garden on the Internet&#34; images = [&#39;/digital-garden-logo.png&#39;] Setting the above values will be used as default for all pages unless its overridden in a specific page&rsquo;s markdown.
+                Understand the structure of the theme&rsquo;s setup to create content for your website.
+Theme&rsquo;s content structure . ├── ... ├── content # Hosts all Markdown content │ ├── articles # Contains the list of markdown files for notes/posts │ │ ├── article-1.md │ │ ├── article-2.md │ │ └── article-3.md │ └── portfolio # List of portfolio projects or case studies │ ├── project-1.md │ └── project-2.md ├── data # Test files (alternatively `spec` or `tests`) │ └── stack.
               </div>
             </a>
           
@@ -477,29 +476,27 @@ title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital
               </div>
             </a>
           
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/newsletter/">
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/google-analytics/">
               
               
-              <h3 class="text-lg font-semibold mb-0.5">5. Newsletter</h3>
+              <h3 class="text-lg font-semibold mb-0.5">6. Google Analytics</h3>
               <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                The theme supports a subscription to multiple newsletter providers.
-Buttondown Substack Revue Buttondown [Params.newsletter.provider] = &ldquo;buttondown&rdquo;
-Copy the action url from your buttondown admin dashboard and add it to [Params.newsletter.path] in config.toml
-Substack [Params.newsletter.provider] = &ldquo;substack&rdquo;
-Setting up substack is the easiest. Just add your substack newsletter URL (applicable for custom domains also) to [Params.newsletter.path] in config.toml
-Note that since substack doesn&rsquo;t have a native API for subscription. The theme uses the api from substackapi.
+                Digital garden theme utilizes the Hugo&rsquo;s [internal template](internal templates) for Google analytics and so both Google analytics v3 and GA v4 (gtag) are supported.
+Add your UA-PROPERTY_ID or G-MEASUREMENT_ID to config.toml
+Google Analytics v3 (analytics.js) googleAnalytics = &#39;UA-PROPERTY_ID&#39; Google Analytics v4 (gtag.js) googleAnalytics = &#39;G-MEASUREMENT_ID&#39; → Configure Metatags
               </div>
             </a>
           
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/social-menu/">
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/portfolio/design2/">
               
               
-              <h3 class="text-lg font-semibold mb-0.5">4. Social Menu</h3>
+                <img class="rounded max-w-full mb-4" src="https://github.com/ongyul/blog/blob/main/assets/123.png?raw=true" alt="Cream sugar apple donut apple croissant" />
+              
+              <h3 class="text-lg font-semibold mb-0.5">Cream sugar apple donut apple croissant</h3>
               <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                The social menu can be used to configure all the social icons in the sidebar. Add links to your social media in the website config to show the icons.
-[[menu.social]] name = &#39;Twitter&#39; url = &#39;https://twitter.com&#39; weight = 1 The name of the social menu needs to be unique and should be one of the supported values.
-Supported values for the social menu item name:
-Twitter GitHub LinkedIn Instagram Mastodon Dribbble Codepen Twitch Email RSS → Configure newsletter
+                Tiramisu sprinkles marzipan lollipop marzipan dolor. Jelly candy marzipan vanilla candy ipsum. Sugar croissant lollipop vanilla cream marzipan. Sprinkles croissant cream dolor jelly marzipan.
+Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.
+Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.
               </div>
             </a>
           
