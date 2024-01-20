@@ -17,6 +17,13 @@
     </item>
     <item>
       <title>2. Structure</title>
+      <link>https://ongyul.github.io/articles/example/</link>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://ongyul.github.io/articles/example/</guid>
+      <description>진진돌이&#xA;ㄴㄴㄴㄴ&#xA;aasdfsf asdfasfdasdf asdfasfdas sdfsfs&#xA;sdfsf&#xA;​&#xA;sdfsfsf&#xA;​&#xA;​&#xA;sdsfdsfdsf&#xA;​&#xA;sdf&#xA;ㅁㄴㅇㄹㄴㅁㄹㄴㅁㄹ&#xA;ㄴㅇㄹㅇㄴㄹㄴㅇㄹ&#xA;​&#xA;Understand the structure of the theme&amp;rsquo;s setup to create content for your website.&#xA;​&#xA;​&#xA;Theme&amp;rsquo;s content structure ​&#xA;. ├── ... ├── content # Hosts all Markdown content │ ├── articles # Contains the list of markdown files for notes/posts │ │ ├── article-1.md │ │ ├── article-2.md │ │ └── article-3.md │ └── portfolio # List of portfolio projects or case studies │ ├── project-1.</description>
+    </item>
+    <item>
+      <title>2. Structure</title>
       <link>https://ongyul.github.io/articles/structure/</link>
       <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://ongyul.github.io/articles/structure/</guid>
