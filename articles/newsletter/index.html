@@ -395,7 +395,19 @@ Note that since substack doesn&rsquo;t have a native API for subscription. The t
     gap: 1rem;
   }
 
-  @media (min-width: 506px) {  
+  @media (min-width: 560px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 767px) {  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 800px) {  
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
     }

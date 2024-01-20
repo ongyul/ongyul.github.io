@@ -380,7 +380,19 @@ Google Analytics v3 (analytics.js) googleAnalytics = &#39;UA-PROPERTY_ID&#39; Go
     gap: 1rem;
   }
 
-  @media (min-width: 506px) {  
+  @media (min-width: 560px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 767px) {  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 800px) {  
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
     }
