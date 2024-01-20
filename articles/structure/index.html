@@ -617,9 +617,7 @@ title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital
 
       <p></p>
 
-      <div id="comment-skeleton" class="comment-skeleton">
-        
-      </div>
+    
 
       
       
@@ -632,44 +630,7 @@ title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital
         async
         >
       </script>
-      <script>
-        function observeDOMChanges() {
-          const utterancesContainer = document.querySelector('.utterances');
-          console.log(utterancesContainer)
-          console.log('ㄷㄷㄷㄷㄷ')
-          if (!utterancesContainer) return;
 
-          
-          const callback = function(mutationsList, observer) {
-            for (let mutation of mutationsList) {
-              if (mutation.type === 'childList' && utterancesContainer.offsetHeight > 0) {
-                
-                
-                document.getElementById('comment-skeleton').style.display = 'none';
-
-                
-                observer.disconnect();
-                break;
-              }
-            }
-          };
-
-          
-          const observer = new MutationObserver(callback);
-
-          
-          const config = { childList: true, subtree: true };
-
-          
-          observer.observe(utterancesContainer, config);
-          }
-
-          
-        window.onload = function() {
-          console.log('ㄷㄷㄷㄷㄷ')
-          observeDOMChanges();
-        };
-      </script>
 
 
       <p></p>
@@ -677,33 +638,6 @@ title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital
         <h2>Random Articles</h2>
         <div class="grid-container">
           
-          
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/portfolio/design1/">
-              
-              
-                <img class="rounded max-w-full mb-4" src="https://cdn.jsdelivr.net/gh/ongyul/blog/assets/123.png?raw=true" alt="Pastry jelly cookie sugar donut orange" />
-              
-              <h3 class="text-lg font-semibold mb-0.5">Pastry jelly cookie sugar donut orange</h3>
-              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                Croissant orange croissant dolor orange croissant. Lollipop biscuit donut vanilla sweet croissant. Apple donut candy tiramisu cream jelly. Croissant sweet cookie vanilla tiramisu dolor.
-Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.
-Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.
-              </div>
-            </a>
-          
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/newsletter/">
-              
-              
-              <h3 class="text-lg font-semibold mb-0.5">5. Newsletter</h3>
-              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                The theme supports a subscription to multiple newsletter providers.
-Buttondown Substack Revue Buttondown [Params.newsletter.provider] = &ldquo;buttondown&rdquo;
-Copy the action url from your buttondown admin dashboard and add it to [Params.newsletter.path] in config.toml
-Substack [Params.newsletter.provider] = &ldquo;substack&rdquo;
-Setting up substack is the easiest. Just add your substack newsletter URL (applicable for custom domains also) to [Params.newsletter.path] in config.toml
-Note that since substack doesn&rsquo;t have a native API for subscription. The theme uses the api from substackapi.
-              </div>
-            </a>
           
             <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/installation/">
               
@@ -720,27 +654,49 @@ Copy package.json, package-lock.json and tailwind.config.js files from the theme
               </div>
             </a>
           
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/metatags/">
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/social-menu/">
               
               
-              <h3 class="text-lg font-semibold mb-0.5">7. Metatags</h3>
+              <h3 class="text-lg font-semibold mb-0.5">4. Social Menu</h3>
               <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                Metatags are used to provide additional information about the page, usualy used by search engines and social media websites / apps. It allows to customize your page&rsquo;s title, description, preview image and more.
-Configure default tags // config.toml
-title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital Garden on the Internet&#34; images = [&#39;/digital-garden-logo.png&#39;] Setting the above values will be used as default for all pages unless its overridden in a specific page&rsquo;s markdown.
+                The social menu can be used to configure all the social icons in the sidebar. Add links to your social media in the website config to show the icons.
+[[menu.social]] name = &#39;Twitter&#39; url = &#39;https://twitter.com&#39; weight = 1 The name of the social menu needs to be unique and should be one of the supported values.
+Supported values for the social menu item name:
+Twitter GitHub LinkedIn Instagram Mastodon Dribbble Codepen Twitch Email RSS → Configure newsletter
               </div>
             </a>
           
-            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/portfolio/design2/">
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/structure/">
               
               
-                <img class="rounded max-w-full mb-4" src="https://github.com/ongyul/blog/blob/main/assets/123.png?raw=true" alt="Cream sugar apple donut apple croissant" />
-              
-              <h3 class="text-lg font-semibold mb-0.5">Cream sugar apple donut apple croissant</h3>
+              <h3 class="text-lg font-semibold mb-0.5">2. Structure</h3>
               <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
-                Tiramisu sprinkles marzipan lollipop marzipan dolor. Jelly candy marzipan vanilla candy ipsum. Sugar croissant lollipop vanilla cream marzipan. Sprinkles croissant cream dolor jelly marzipan.
-Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.
-Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.
+                Understand the structure of the theme&rsquo;s setup to create content for your website.
+Theme&rsquo;s content structure . ├── ... ├── content # Hosts all Markdown content │ ├── articles # Contains the list of markdown files for notes/posts │ │ ├── article-1.md │ │ ├── article-2.md │ │ └── article-3.md │ └── portfolio # List of portfolio projects or case studies │ ├── project-1.md │ └── project-2.md ├── data # Test files (alternatively `spec` or `tests`) │ └── stack.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles2/newsletter/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">5. Newsletter</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                The theme supports a subscription to multiple newsletter providers.
+Buttondown Substack Revue Buttondown [Params.newsletter.provider] = &ldquo;buttondown&rdquo;
+Copy the action url from your buttondown admin dashboard and add it to [Params.newsletter.path] in config.toml
+Substack [Params.newsletter.provider] = &ldquo;substack&rdquo;
+Setting up substack is the easiest. Just add your substack newsletter URL (applicable for custom domains also) to [Params.newsletter.path] in config.toml
+Note that since substack doesn&rsquo;t have a native API for subscription. The theme uses the api from substackapi.
+              </div>
+            </a>
+          
+            <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/structure/">
+              
+              
+              <h3 class="text-lg font-semibold mb-0.5">2. Structure</h3>
+              <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                Understand the structure of the theme&rsquo;s setup to create content for your website.
+Theme&rsquo;s content structure . ├── ... ├── content # Hosts all Markdown content │ ├── articles # Contains the list of markdown files for notes/posts │ │ ├── article-1.md │ │ ├── article-2.md │ │ └── article-3.md │ └── portfolio # List of portfolio projects or case studies │ ├── project-1.md │ └── project-2.md ├── data # Test files (alternatively `spec` or `tests`) │ └── stack.
               </div>
             </a>
           
