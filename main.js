@@ -30,7 +30,10 @@
     const scrollPos = localStorage.getItem(scrollElementStateKey);
     localStorage.removeItem(scrollElementStateKey);
     if (scrollElement) {
-      scrollElement.scrollTop = scrollPos;
+      scrollElement.scrollTo({
+        top: parseInt(scrollPos, 10) || 0,
+        behavior: "smooth"
+      });
     }
   };
   var darkModeToggle = document.querySelector(".dark-mode-toggle");
