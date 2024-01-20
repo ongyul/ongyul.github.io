@@ -388,6 +388,26 @@ Note that since substack doesn&rsquo;t have a native API for subscription. The t
 
 
 
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {  
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
+
 <div class="flex flex-1 h-screen relative w-full min-w-0">
 
   <section
@@ -576,7 +596,7 @@ title = &#34;Personal Digital Garden&#34; [Params] description = &#34;My Digital
       <p></p>
       <section class="additional-pages">
       <h2>Related Articles</h2>
-      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="grid-container">
         
         <a class="relatedarticle block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="/articles/installation/">
           
